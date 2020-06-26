@@ -93,6 +93,29 @@ background-image: url(../images/main_logo.jpg);
 #contents .container li:nth-child(8){background: #f00;width: 75%;}
 
 
+
+.viewSlider{}
+.viewSlider .sliderTxt{
+	position: absolute;left: 80px;top: 80px;
+	font-size: 3em;_font-weight: bold;color: #1550b6;
+}
+.viewSlider .sliderTxt p{margin-bottom: 30px;}
+.viewSlider .sliderTxt a{
+	display: block;width: 160px;line-height: 40px;
+	font-size: initial;text-align: center;
+	_border: 1px solid #000; background: #182c4d;
+	color:white;
+}
+
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
 /*footer*/
 footer#footer{width: 1200px; margin: auto;}
 footer#footer{
@@ -103,6 +126,6 @@ footer#footer ul.left{float: left;width: 25%;text-align: center;background: #888
 footer#footer .left li:nth-child(1){float: left;margin-left: 40px;background:orange;}
 footer#footer .left li:nth-child(2){float: right;margin-right: 40px;background:pink;}
 footer#footer ul.right{float: right;width: 75%;text-align: center;}
-footer#footer .right li:nth-child(1){float: left;}
-footer#footer .right li:nth-child(2){float: left;}
+footer#footer .right li:nth-child(1){float: left;margin-left: 40px;}
+footer#footer .right li:nth-child(2){float: left;margin-left: 40px;}
 
