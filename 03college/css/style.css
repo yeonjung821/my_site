@@ -1,6 +1,71 @@
 @charset "utf-8";
 /*header*/
-header#header{height: 160px;}
+/*#headerWrap{background: #0044af;}*/
+
+/*utillmenu*/
+.utillMenuWrap{background: #0044af}
+.utillMenu{
+	width: 1200px; margin: 0 auto;;
+}
+.utillMenu ul.left{float: left;}
+.utillMenu ul.left li{
+	float: left;width: 120px;margin-right: 2px;}
+.utillMenu ul.left li a{
+	line-height: 40px;display: block;
+text-align: center;background: #00163b; 
+color:#fff;font-weight: bold;
+}
+.utillMenu ul.left li a.active{background: #fff;color: #333;}
+
+.utillMenu ul.right{float: right;}
+.utillMenu ul.right li{
+	float: left;color: #fff;font-size: 0.8em;
+}
+.utillMenu ul.right li a{
+	display: block;color:#fff;
+	padding: 0 10px; line-height: 40px;
+}
+.utillMenu ul.right li.btn_mp a{
+	float: left; background: #fff;padding: 0;
+	margin-right: 2px;color: #333; margin-top: 10px;
+	width: 20px;line-height: 20px;text-align: center;
+	font-weight: bold; text-indent: -1px;
+}
+.utillMenu ul.right li:first-child{line-height: 40px; padding-right: 10px;}
+.utillMenu ul.right li:last-child{padding-right: 0}
+
+
+/*main menu*/
+.mainGnb{
+	width: 1200px;margin: 0 auto;height: 300px;
+	position: relative; _background: #333;
+}
+.mainGnb h1{
+	width: 212px;height: 53px;
+background-image: url(../images/main_logo.jpg); 
+}
+.mainGnb h1 a{display: block;line-height: 53px;text-indent: -9999px;}
+
+.mainGnb .navWrap{width: 760px; position: absolute;right: 0;top: 31px;}
+.mainGnb .navWrap ul.nav{float: left;}
+.mainGnb .navWrap ul.nav li{float: left;}
+.mainGnb .navWrap ul.nav li a{
+	display: block; color: #464646; font-size: 1.2em;
+	width: 130px;line-height: 45px;font-weight: bold;
+}
+
+
+.mainGnb .navWrap .btnToggle{float: right;}
+.mainGnb .navWrap .btnToggle a{
+	display: block;width: 45px;height: 45px;
+	background-image: url(../images/toggle_btn);
+	background-repeat: no-repeat;
+}
+.mainGnb .navWrap .btnToggle .toggle{background-position: 0 0;}
+.mainGnb .navWrap .btnToggle .my{background-position: -45px 0;}
+
+
+
 
 
 /*contents*/
@@ -35,8 +100,9 @@ footer#footer{
 }
 
 footer#footer ul.left{float: left;width: 25%;text-align: center;background: #888;}
-footer#footer li:nth-child(1){float: left;width: 80px; margin-left: 35px;background:orange;}
-footer#footer li:nth-child(2){float: right;width: 110px;margin-right: 35px;background: orange;}
+footer#footer .left li:nth-child(1){float: left;margin-left: 40px;background:orange;}
+footer#footer .left li:nth-child(2){float: right;margin-right: 40px;background:pink;}
 footer#footer ul.right{float: right;width: 75%;text-align: center;}
-footer#footer li:nth-child(1){float: left;}
-footer#footer li:nth-child(2){float: left;}
+footer#footer .right li:nth-child(1){float: left;}
+footer#footer .right li:nth-child(2){float: left;}
+
