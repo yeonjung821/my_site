@@ -5,15 +5,15 @@
 /*utillmenu*/
 .utillMenuWrap{background: #0044af}
 .utillMenu{
-	width: 1200px; margin: 0 auto;;
+	width: 1200px; margin: 0 auto;
 }
 .utillMenu ul.left{float: left;}
 .utillMenu ul.left li{
 	float: left;width: 120px;margin-right: 2px;}
 .utillMenu ul.left li a{
 	line-height: 40px;display: block;
-text-align: center;background: #00163b; 
-color:#fff;font-weight: bold;
+	text-align: center;background: #00163b; 
+	color:#fff;font-weight: bold;
 }
 .utillMenu ul.left li a.active{background: #fff;color: #333;}
 
@@ -28,7 +28,7 @@ color:#fff;font-weight: bold;
 .utillMenu ul.right li.btn_mp a{
 	float: left; background: #fff;padding: 0;
 	margin-right: 2px;color: #333; margin-top: 10px;
-	width: 20px;line-height: 20px;text-align: center;
+	width: 20px;height: 20px;line-height: 20px;text-align: center;
 	font-weight: bold; text-indent: -1px;
 }
 .utillMenu ul.right li:first-child{line-height: 40px; padding-right: 10px;}
@@ -37,16 +37,16 @@ color:#fff;font-weight: bold;
 
 /*main menu*/
 .mainGnb{
-	width: 1200px;margin: 0 auto;height: 300px;
+	width: 1200px;margin: 0 auto;padding: 30px;
 	position: relative; _background: #333;
 }
 .mainGnb h1{
-	width: 212px;height: 53px;
+	width: 212px;height: 53px; background: red;
 background-image: url(../images/main_logo.jpg); 
 }
 .mainGnb h1 a{display: block;line-height: 53px;text-indent: -9999px;}
 
-.mainGnb .navWrap{width: 760px; position: absolute;right: 0;top: 31px;}
+.mainGnb .navWrap{width: 760px; position: absolute;right: 0;top: 30px;}
 .mainGnb .navWrap ul.nav{float: left;}
 .mainGnb .navWrap ul.nav li{float: left;}
 .mainGnb .navWrap ul.nav li a{
@@ -58,11 +58,58 @@ background-image: url(../images/main_logo.jpg);
 .mainGnb .navWrap .btnToggle{float: right;}
 .mainGnb .navWrap .btnToggle a{
 	display: block;width: 45px;height: 45px;
+	float: left;
 	background-image: url(../images/toggle_btn);
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;text-indent: -9999px
 }
 .mainGnb .navWrap .btnToggle .toggle{background-position: 0 0;}
 .mainGnb .navWrap .btnToggle .my{background-position: -45px 0;}
+
+
+
+
+
+/*slider*/
+.viewSlider{}
+.viewSlider .sliderTxt{
+	position: absolute;left: 80px;top: 80px;
+	font-size: 3em;_font-weight: bold;color: #1550b6;
+}
+.viewSlider .sliderTxt p{margin-bottom: 30px;}
+.viewSlider .sliderTxt a{
+	display: block;width: 160px;line-height: 40px;
+	font-size: initial;text-align: center;
+	_border: 1px solid #000; background: #182c4d;
+	color:white;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;
+}
+
+.sliderTwo .bx-wrapper .bx-pager {
+	bottom: 190px;
+	width: 150px;
+	right: 0;
+}
+
+
+
+
+/*box*/
+
+.boxTwo {position: relative;}
+.boxTwo .boxTxt {position: absolute;left: 35px;top: 80px;color: #fff;}
+.boxTwo .boxTxt h1{font-size: 2.2em;}
+.boxTwo .boxTxt p{font-size:1.2em; margin: 16px 0;}
+.boxTwo .boxTxt a{
+	display: block;font-size:1.0em;color:#fff;
+	border: 1px solid #fff; width: 160px;height: 41px;
+	text-align: center;line-height: 40px; background-color: rgba(0,0,0,0.5);
+}
 
 
 
@@ -94,25 +141,6 @@ background-image: url(../images/main_logo.jpg);
 
 
 
-.viewSlider{}
-.viewSlider .sliderTxt{
-	position: absolute;left: 80px;top: 80px;
-	font-size: 3em;_font-weight: bold;color: #1550b6;
-}
-.viewSlider .sliderTxt p{margin-bottom: 30px;}
-.viewSlider .sliderTxt a{
-	display: block;width: 160px;line-height: 40px;
-	font-size: initial;text-align: center;
-	_border: 1px solid #000; background: #182c4d;
-	color:white;
-}
-.bx-wrapper {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    margin-bottom: 0;
-}
 
 
 
@@ -123,11 +151,7 @@ background-image: url(../images/main_logo.jpg);
 
 
 /*footer*/
-footer#footer{width: 1200px; margin: auto;}
-footer#footer{
-	height: 200px;
-}
-
+footer#footer{width: 1200px; height: 200px; margin: auto;}
 footer#footer ul.right{}
 
 footer#footer ul.left{float: left;width: 25%;text-align: center;background: #888;}

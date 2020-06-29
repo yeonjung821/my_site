@@ -13,8 +13,9 @@
 <body>
 <script>
 		$(document).ready(function(){
-	$(".vSlider").bxSlider({pager:false});
-})
+			$(".vSlider").bxSlider({pager:false});
+			$(".bslider").bxslider({controls:false,auto:true});
+});
 </script>
 
 	<header id="headerWrap">
@@ -27,7 +28,7 @@
 				</ul>
 				<ul class="right clearfix">
 					<li>글자크기</a></li>
-					<li class=btn_mp>
+					<li class=btn_mp clearfix>
 						<a href="#">-</a>
 						<a href="#">+</a>
 					</li>
@@ -39,7 +40,7 @@
 		</div>
 		<div class="mainGnb clearfix"> <!-- 100% blue -->
 			<h1 class="logo"><a href="#">한국대학교</a></h1>
-			<div class="navWrap" style="display: none;"> <!-- poa -->
+			<div class="navWrap clearfix"> <!-- poa -->
 				<ul class="nav clearfix">
 					<li><a href="#">대학소개</a></li>
 					<li><a href="#">학과소개</a></li>
@@ -87,24 +88,31 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li class="boxTwo">
 					<img src="images/visual_R.png" alt="">
-					<ul class="vrRtxt"> <!-- w230 h290-->
-						<p><b>APP</b>으로<br><b>스마트 도서관</b><br>바로이용하자!</p> <!-- h130 -->
+					<ul class="boxTxt"> <!-- w230 h290-->
+						<h1>APP으로<br>스마트 도서관<br>바로이용하자!</h1> <!-- h130 -->
 						<p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p> <!-- mt25 h70 -->
 						<a href="#">자세히 보기  ▶</a> <!-- mt20 h40 --> 
 					</ul>
+				</li>
+				<li class="boxTwo">
+					<img src="images/box2_02.jpg" alt="">
+					<div class="boxTxt">
+						<h1>APP으로<br>스마트 도서관<br>바로이용하자!</h1>
+						<p>모바일 열람증은<br>도서관 자료실/도서 대출 등에<br>사용할 수 있습니다.</p>
+						<a href="#">자세히보기</a>
+					</div>
 				</li>
 				<li>03</li>
 				<li>04</li>
 				<li>05</li>
 				<li>06</li>
 				<li>07</li>
-				<li>
-					<div class="bxSlider">
-						<div>
-							<img src="images/con6.png" alt="">
-						</div>
+				<li class="sliderTwo">
+					<div class="bSlider">
+						<div><img src="images/con6.png" alt=""></div>
+						<div><img src="images/con6.png" alt=""></div>
 					</div>
 				</li>
 			</ul>
