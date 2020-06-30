@@ -115,17 +115,19 @@ background-image: url(../images/main_logo.jpg);
 	text-align: center;line-height: 40px; background-color: rgba(0,0,0,0.5);
 }
 
+
+
+
 .boxThree{position: relative;}
 .boxThree .boxTxt {
 	position: absolute;color: #fff;
 	left: 20px;top: 20px;}
-.boxThree .boxTxt h1{font-size: 1.5em;font-weight: bold;padding-bottom:25px;}
+.boxThree .boxTxt h1{font-size: 1.4em;font-weight: bold;padding-bottom:25px;}
 .boxThree .boxTxt .icon{font-size: 1em;text-align: center;}
 .boxThree .boxTxt .icon a{float: left;margin-right: 25px;color: #fff;}
 .boxThree .boxTxt .icon a:last-child{margin-right: 0;}
-/*.conOne .conTxt .icon p:nth-child(1){margin-left: 20px;float: left;}
-.conOne .conTxt .icon p:nth-child(2){margin-left: 90px;}
-.conOne .conTxt .icon p:nth-child(3){margin-left: 160px;}*/
+
+
 
 
 .boxFour{position: relative;}
@@ -133,11 +135,37 @@ background-image: url(../images/main_logo.jpg);
 	position: absolute;color:#fff;
 	left: 20px;top: 20px;
 }
-.boxFour .boxTxt h1{font-size: 1.5em;font-weight: bold;padding-bottom:25px;}
-.boxFour .boxTxt .txtLink{font-size: 0.8em;}
-.boxFour .boxTxt .txtLink a{}
+.boxFour .boxTxt h1{font-size: 1.4em;font-weight: bold;padding-bottom:20px;}
+.boxFour .boxTxt h1{border-bottom: 2px solid #fff; width: 260px;}
+.boxFour .boxTxt .txtLink{font-size: 0.7em;margin-top: 20px;}
+.boxFour .boxTxt .txtLink a{color:#fff;}
 .boxFour .boxTxt .txtLink a>p{float: left;padding-bottom: 15px;}
-.boxFour .boxTxt .txtLink a>p:last-child{float: right;margin-right: 20px;}
+.boxFour .boxTxt .txtLink a>p:last-child{float: right;margin-right: 20px;
+}
+
+
+
+.boxFive{}
+.boxFive .boxTxt {
+	position: relative;color:#01173e;
+	left: 20px;top: 20px;
+}
+.boxFive .boxTxt h1{
+	font-size: 1.4em;font-weight: bold;padding-bottom:20px;display: block;
+}
+
+.boxFive .boxTxt .newsLink .newsTxt{width: 260px;}
+.boxFive .boxTxt .newsLink .newsTxt img.img{float: left;}
+.boxFive .boxTxt .newsLink .newsTxt a{float: right;font-size: 0.7em;}
+
+.boxFive .boxTxt .newsLink .newsSns img.img{position: absolute;right: 20px;bottom: 30px}
+
+
+
+
+.boxSix{position: relative;}
+.boxSix .boxTxt {border: 1px solid #000;position: absolute;}
+.boxSix .boxTxt h1{font-size: 1.4em;bottom: 0 auto;text-align: center;}
 
 
 
