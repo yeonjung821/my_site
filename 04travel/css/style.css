@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*header*/
+/*#headerWrap{background: #0044af;}*/
+
+/*utillmenu*/
+.utillMenuWrap{background: #0044af}
+.utillMenu{
+	width: 1200px; margin: 0 auto;
+}
+.utillMenu ul.left{float: left;}
+.utillMenu ul.left li{
+	float: left;width: 120px;margin-right: 2px;}
+.utillMenu ul.left li a{
+	line-height: 40px;display: block;
+	text-align: center;background: #00163b; 
+	color:#fff;font-weight: bold;
+}
+.utillMenu ul.left li a.active{background: #fff;color: #333;}
+
+.utillMenu ul.right{float: right;}
+.utillMenu ul.right li{
+	float: left;color: #fff;font-size: 0.8em;
+}
+.utillMenu ul.right li a{
+	display: block;color:#fff;
+	padding: 0 10px; line-height: 40px;
+}
+.utillMenu ul.right li.btn_mp a{
+	float: left; background: #fff;padding: 0;
+	margin-right: 2px;color: #333; margin-top: 10px;
+	width: 20px;height: 20px;line-height: 20px;text-align: center;
+	font-weight: bold; text-indent: -1px;
+}
+.utillMenu ul.right li:first-child{line-height: 40px; padding-right: 10px;}
+.utillMenu ul.right li:last-child{padding-right: 0}
+
+
+/*main menu*/
+.mainGnb{
+	width: 1200px;margin: 0 auto;padding: 30px;
+	position: relative; _background: #333;
+}
+.mainGnb h1{
+	width: 212px;height: 53px; background: red;
+background-image: url(../images/main_logo.jpg); 
+}
+.mainGnb h1 a{display: block;line-height: 53px;text-indent: -9999px;}
+
+.mainGnb .navWrap{width: 760px; position: absolute;right: 0;top: 30px;}
+.mainGnb .navWrap ul.nav{float: left;}
+.mainGnb .navWrap ul.nav li{float: left;}
+.mainGnb .navWrap ul.nav li a{
+	display: block; color: #464646; font-size: 1.2em;
+	width: 130px;line-height: 45px;font-weight: bold;
+}
+
+
+.mainGnb .navWrap .btnToggle{float: right;}
+.mainGnb .navWrap .btnToggle a{
+	display: block;width: 45px;height: 45px;
+	float: left;
+	background-image: url(../images/toggle_btn.gif);
+	background-repeat: no-repeat;text-indent: -9999px
+}
+.mainGnb .navWrap .btnToggle .toggle{background-position: 0 0;}
+.mainGnb .navWrap .btnToggle .my{background-position: -45px 0;}
+
+
+
+
+
+/*slider*/
+.viewSlider{}
+.viewSlider .sliderTxt{
+	position: absolute;left: 80px;top: 80px;
+	font-size: 3em;_font-weight: bold;color: #1550b6;
+}
+.viewSlider .sliderTxt p{margin-bottom: 30px;}
+.viewSlider .sliderTxt a{
+	display: block;width: 160px;line-height: 40px;
+	font-size: initial;text-align: center;
+	_border: 1px solid #000; background: #182c4d;
+	color:white;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;
+}
+
+
+
+.sliderTwo .bSlider{position: relative;}
+.sliderTwo a.btn{position: absolute;
+	display: block;color: #fff; width: 160px;
+    text-align: center;line-height: 40px;
+    background-color: rgba(253,80,63,0.9);bottom: 30px;left: 30px;}
+.sliderTwo .bx-wrapper .bx-pager {
+	bottom: 190px;
+	width: 150px;
+	right: 0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{background: #f00}
+
+
+
+
+
+
+
+/*box*/
+
+.boxTwo {position: relative;}
+.boxTwo .boxTxt {position: absolute;left: 35px;top: 80px;color: #fff;}
+.boxTwo .boxTxt h1{font-size: 2.2em;}
+.boxTwo .boxTxt p{font-size:1.2em; margin: 16px 0;}
+.boxTwo .boxTxt a{
+	display: block;font-size:1.0em;color:#fff;
+	border: 1px solid #fff; width: 160px;height: 41px;
+	text-align: center;line-height: 40px; background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+.boxThree{position: relative;}
+.boxThree .boxTxt {
+	position: absolute;color: #fff;
+	left: 20px;top: 20px;}
+.boxThree .boxTxt h1{font-size: 1.4em;font-weight: bold;padding-bottom:25px;}
+.boxThree .boxTxt .icon{font-size: 1em;text-align: center;}
+.boxThree .boxTxt .icon a{float: left;margin-right: 25px;color: #fff;}
+.boxThree .boxTxt .icon a:last-child{margin-right: 0;}
+
+
+
+
+.boxFour{position: relative;}
+.boxFour .boxTxt {
+	position: absolute;color:#fff;
+	left: 20px;top: 20px;
+}
+.boxFour .boxTxt h1{font-size: 1.4em;font-weight: bold;padding-bottom:20px;}
+.boxFour .boxTxt h1{border-bottom: 2px solid #fff; width: 260px;}
+.boxFour .boxTxt .txtLink{font-size: 0.7em;margin-top: 20px;}
+.boxFour .boxTxt .txtLink a{color:#fff;}
+.boxFour .boxTxt .txtLink a>p{float: left;padding-bottom: 15px;}
+.boxFour .boxTxt .txtLink a>p:last-child{float: right;margin-right: 20px;
+}
+
+
+
+.boxFive{}
+.boxFive .boxTxt {
+	position: relative;color:#01173e;
+	left: 20px;top: 20px;
+}
+.boxFive .boxTxt h1{
+	font-size: 1.4em;font-weight: bold;padding-bottom:20px;
+}
+
+.boxFive .boxTxt .newsTxt{width: 240px;height: 80px;}
+.boxFive .boxTxt .newsTxt img{float: left;}
+.boxFive .boxTxt .newsTxt a{float: right;font-size: 0.7em;}
+
+.boxFive .boxTxt .newsSns{}
+.boxFive .boxTxt .newsSns img{margin: 15px 135px;}
+
+
+
+
+.boxSix{position: relative;}
+.boxSix img{position: absolute;}
+.boxSix .boxTxt {
+	width: 100%;height: 50px;background-color: rgba(0,0,0,0.7);
+	position: absolute;text-align: center; bottom: 0;
+}
+.boxSix .boxTxt h1{font-size: 1.3em;margin: 10px 0;color: #fff;}
+
+
+
+
+.boxSeven{position: relative;}
+.boxSeven img{position: absolute;}
+.boxSeven .plaBtn img{position: absolute;margin: 80px 120px;}
+
+
+
+
+.footer{width: 1200px; height: 60px; margin: 20px auto;background: #fff;}
+
+.footer ul.left{float: left;width: 25%;text-align: center;height: 60px;
+	font-size: 1.2em;font-weight: bold;color: #00163b;border-right: 1px solid #000;
+}
+.footer ul.right{float: right;width: 75%;text-align: center;}
+.footer .left li{line-height: 60px;}
+.footer .right li{line-height: 60px;}
+.footer .left li:nth-child(1){float: left;margin-left: 40px;}
+.footer .left li:nth-child(2){float: right;margin-right: 40px;}
+.footer .right li:nth-child(1){float: left;margin-left: 30px;font-size: 1.0em;}
+.footer .right li:nth-child(2){font-size: 0.9em;}
+
+.footer {position: relative;}
+.footer .right{position: relative;}
+.footer .bx-pager{right: 0;top: 0;position: absolute;}
+.footer .bx-pager .down{padding-top: 4px;}
+
+
+
+
+/*contents*/
+#contents{
+	height: 1300px;
+	background-image:url(../images/00bg_dot.gif), url(../images/00main_bg01.jpg);
+	background-repeat: repeat, no-repeat;
+	background-position: center;
+	background-size: auto,cover;
+}
+#contents .title{
+	width: 1200px;	height: 260px;
+	_background: yellow;margin: auto;
+	}
+#contents .title ul{width: 100%;height: 140px;margin: 0 auto;}
+#contents .title li{color: #fff;padding:70px 0 40px 0;float: left;}
+#contents .title h2{font-size: 2.0em;font-weight: lighter;}
+#contents .title h1{font-size: 3.2em;font-weight: bold;}
+#contents .title img{float: right;padding-top: 90px;}
+
+
+#contents .container{width: 1200px;margin: auto;}
+#contents .container li{float: left;width: 25%;height: 225px;}
+
+#contents .container li:nth-child(1){background: orange;width: 75%;height: 450px;}
+#contents .container li:nth-child(2){background: #000;width: 25%;height: 450px;}
+#contents .container li:nth-child(3){background: #00163b;}
+#contents .container li:nth-child(4){background: #00f;}
+#contents .container li:nth-child(5){background: #fff;}
+#contents .container li:nth-child(6){background: #ff0;}
+#contents .container li:nth-child(7){background: #f0f;}
+#contents .container li:nth-child(8){background: #f00;width: 75%;}
+
+
+
+
+
+
+
+
+
+/*footer*/
+#footer{width: 1200px; height: 180px; margin: 0 auto;background: #fff;}
+#footer .txt1{margin: 30px auto;padding: 0 0 0 300px;}
+#footer .txt1 a{}
+#footer .txt1 p{padding-top: 10px;}
+#footer .txt1 p{font-size: 0.7em;}
+#footer .txt1 p:last-child{font-size: 0.9em;}
+
+
+
+/*회사소개           한국 대학교           개인정보취급방침         이용정책         입점/제휴문의 및 광고         이메일 무단수집거부*/
+
+
+/*대표자 : 홍길동   주소 : 서울특별시 구로구 구로로 300 (구로동 6가)   사업자등록번호 : 123-56-7890234<br>
+통신판매업 신고번호 : 제 1234-서울 구로구-1004호   개인정보관리 책임자 : 홍길동   소비자피해보상보험<br>
+고객센터 : 1234-5678   FAX : 02-1234-5678   HANGUKUNIVERSITY @HANGUK.COM*/
+
+/*COPYRIGHT ⓒ HANGUK. ALL RIGHTS RESERVED.*/
