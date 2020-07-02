@@ -92,12 +92,18 @@ background-image: url(../images/main_logo.jpg);
 
 
 
+.sliderTwo .bSlider{position: relative;}
+.sliderTwo a.btn{position: absolute;
+	display: block;color: #fff; width: 160px;
+    text-align: center;line-height: 40px;
+    background-color: rgba(253,80,63,0.9);bottom: 30px;left: 30px;}
 .sliderTwo .bx-wrapper .bx-pager {
 	bottom: 190px;
 	width: 150px;
 	right: 0;
 }
 .bx-wrapper .bx-pager.bx-default-pager a.active{background: #f00}
+
 
 
 
@@ -182,8 +188,8 @@ background-image: url(../images/main_logo.jpg);
 
 
 
+
 .footer{width: 1200px; height: 60px; margin: 20px auto;background: #fff;}
-.footer ul{}
 
 .footer ul.left{float: left;width: 25%;text-align: center;height: 60px;
 	font-size: 1.2em;font-weight: bold;color: #00163b;border-right: 1px solid #000;
@@ -196,6 +202,10 @@ background-image: url(../images/main_logo.jpg);
 .footer .right li:nth-child(1){float: left;margin-left: 30px;font-size: 1.0em;}
 .footer .right li:nth-child(2){font-size: 0.9em;}
 
+.footer {position: relative;}
+.footer .right{position: relative;}
+.footer .bx-pager{right: 0;top: 0;position: absolute;}
+.footer .bx-pager .down{padding-top: 4px;}
 
 
 
@@ -240,11 +250,12 @@ background-image: url(../images/main_logo.jpg);
 
 
 /*footer*/
-#footer .footer{width: 1200px; height: 180px; margin: 0 auto;background: #fff;}
-#footer .footer .txt1{width: 700px;text-align: left;}
-#footer .footer .txt1 a{font-size: 0.9em;}
-#footer .footer .txt1 p{}
-
+#footer{width: 1200px; height: 180px; margin: 0 auto;background: #fff;}
+#footer .txt1{margin: 30px auto;padding: 0 0 0 300px;}
+#footer .txt1 a{}
+#footer .txt1 p{padding-top: 10px;}
+#footer .txt1 p{font-size: 0.7em;}
+#footer .txt1 p:last-child{font-size: 0.9em;}
 
 
 
