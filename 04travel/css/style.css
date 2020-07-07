@@ -4,18 +4,20 @@
 
 
 /*headerwrap*/
-#headerWrap {}
-.utillMenuWrap {background: #0c71a8;}
+#headerWrap {height: 150px;}
 
-.utillMenuWrap{background-image: url(../images/airplan.jpg);margin: auto;height: 100%;height: 87px;}
-.utillMenuWrap .utillMenu{}
-.utillMenuWrap .utillMenu .logo{}
+.utillMenuWrap{
+	width: 100%;height: 85px;margin: auto;
+	background: #0c71a8;background-image: url(../images/airplan.jpg);
+}
+.utillMenuWrap .utillMenu{width: 984px;margin: 0 auto;line-height: 85px;}
+.utillMenuWrap .utillMenu .logo{float: left;}
 .utillMenuWrap .utillMenu ul{}
 .utillMenuWrap .utillMenu p{}
-.utillMenuWrap .utillMenu a{}
+.utillMenuWrap .utillMenu a{float: right;}
 .utillMenuWrap .utillMenu a img{}
 
-.maingnb{width: 100%;height: 60px;background: #f9f9f9;}
+.maingnb{width: 100%;height: 65px;background: #f1f1f1;}
 .maingnb .nav{}
 .maingnb .nav li{}
 .maingnb .nav li a{}
