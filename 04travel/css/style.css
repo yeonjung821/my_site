@@ -68,7 +68,7 @@
 
 
 /*contents*/
-#contentsWrap {}
+/*#contentsWrap {}
 #contentsWrap .container {}
 #contentsWrap .container .contents {}
 
@@ -83,7 +83,7 @@
 
 
 #contentsWrap .container .contents .contry {}
-
+*/
 
 
 
@@ -94,7 +94,7 @@
 
 
 /*contents*/
-#contentsWrap .container .contents{width: 980px;margin: auto;position: relative;}
+/*#contentsWrap .container .contents{width: 980px;margin: auto;position: relative;}
 
 #contentsWrap .container ul.leftWrap{float: left;background: gray;width: 480px;height: 556px;}
 #contentsWrap .container ul.conTxt{float: right;background: skyblue;width: 500px;height: 556px;}
@@ -114,12 +114,112 @@
 #contentsWrap .container ul.boxWrap .box7{background: pink;}
 #contentsWrap .container ul.boxWrap .box8{background: blue;}
 #contentsWrap .container {}
-#contentsWrap .container {}
+#contentsWrap .container {}*/
+
+
+/*
+<div id="contentsWrap"> <!-- bgimg-구름/풍선 -->
+	<div class="contents"> <!-- 큰틀 -->
+		<div class="contents1"> <!--내용 큰 틀, 세가지로 나눈 것. -->
+			<ul class="leftWrap">
+				<li class="up">form</li>
+				<li class="down">
+					<ul class="france">
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="japan">
+						<li></li>
+						<li></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="rightWrap">
+				<li>
+					<h1></h1>
+					<p></p>
+				</li>
+			</ul>
+		</div>		<!-- dontents1 -->
+		<div class="contents2">
+			<div class="boxUp">
+				<ul class="box1">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box2">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box3">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box4">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="boxDown">
+				<ul class="box5">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box6">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box7">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="box8">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>  	<!-- contents2 -->
+	</div> <!-- contents -->
+</div>  <!-- contentsWrap -->
+
+*/
+
+#contentsWrap{
+	background-image: url(../images/bg01.jpg);
+	height: 1240px;
+	background-position: center;
+	background-size: cover;
+}
+#contentsWrap .contents{_background: white;width: 980px;height: 1125px;margin: auto;padding-top: 60px;}
+#contentsWrap .contents .contents1{_background: green;width: 980px;height: 555px;margin-bottom: 15px;}
+#contentsWrap .contents .contents1 .leftWrap{float: left;}
+#contentsWrap .contents .contents1 .leftWrap li.up{background: blue;width: 480px;height: 300px;margin-bottom: 15px;}
+#contentsWrap .contents .contents1 .leftWrap li.down{_background: yellow; width: 480px;height: 240px;}
+#contentsWrap .contents .contents1 .leftWrap li.down li.france{background: pink;float: left;width: 230px;height: 240px;}
+/*#contentsWrap .contents .contents1 .leftWrap li.down li.france li{background: hotpink;}*/
+#contentsWrap .contents .contents1 .leftWrap li.down li.japan{background: skyblue;float: right;width: 230px;height: 240px;}
+/*#contentsWrap .contents .contents1 .leftWrap li.down li.japan li{background: coral;}*/
+
+#contentsWrap .contents .contents1 ul.rightWrap{background:purple;width: 480px;height: 555px;float: right;}
+#contentsWrap .contents .contents1 ul.rightWrap li{background: white;width: 360px;height: 160px;margin-left: 20px;;margin-top: 30px}
+#contentsWrap .contents .contents1 ul.rightWrap li h1{}
+#contentsWrap .contents .contents1 ul.rightWrap li p{}
 
 
 
+#contentsWrap .contents .contents2{_background: red;width: 980px;height: 495px;}
+#contentsWrap .contents .contents2 ul.boxWrap{}
+#contentsWrap .contents .contents2 ul li{background: hotpink;width: 233.75px;height: 240px;float: left;margin-bottom: 15px;margin-right: 15px;}
 
-
+#contentsWrap .contents .contents2 ul li:nth-child(4),#contentsWrap .contents .contents2 ul li:nth-child(8){margin-right: 0;}
+/*#contentsWrap .contents .contents2 ul li:nth-child(1)
+#contentsWrap .contents .contents2 ul li:nth-child(2)
+#contentsWrap .contents .contents2 ul li:nth-child(3)*/
+/*#contentsWrap .contents .contents2 ul li:nth-child(4),#contentsWrap .contents .contents2 ul li:nth-child(8){margin-right: 0;}*/
+/*#contentsWrap .contents .contents2 ul li:nth-child(5)
+#contentsWrap .contents .contents2 ul li:nth-child(6)
+#contentsWrap .contents .contents2 ul li:nth-child(7)
+#contentsWrap .contents .contents2 ul li:nth-child(8)*/
 
 
 
