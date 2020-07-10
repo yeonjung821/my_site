@@ -232,14 +232,14 @@ background-image: url(../images/main_logo.jpg);
 #contents .container{width: 1200px;margin: auto;}
 #contents .container li{float: left;width: 25%;height: 225px;}
 
-#contents .container li:nth-child(1){background: orange;width: 75%;height: 450px;}
-#contents .container li:nth-child(2){background: #000;width: 25%;height: 450px;}
+#contents .container li:nth-child(1){_background: orange;width: 75%;height: 450px;}
+#contents .container li:nth-child(2){_background: #000;width: 25%;height: 450px;}
 #contents .container li:nth-child(3){background: #00163b;}
-#contents .container li:nth-child(4){background: #00f;}
+#contents .container li:nth-child(4){_background: #00f;}
 #contents .container li:nth-child(5){background: #fff;}
-#contents .container li:nth-child(6){background: #ff0;}
-#contents .container li:nth-child(7){background: #f0f;}
-#contents .container li:nth-child(8){background: #f00;width: 75%;}
+#contents .container li:nth-child(6){_background: #ff0;}
+#contents .container li:nth-child(7){_background: #f0f;}
+#contents .container li:nth-child(8){_background: #f00;width: 75%;}
 
 
 
