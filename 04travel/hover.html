@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>hover</title>
 	<style>
-		.hoverWrap{
+		.wrap{
 			width: 40px;height: 40px;border: 3px solid #fff;
 			border-radius: 50%;box-sizing: border-box;
 			_background: skyblue;
@@ -13,14 +13,14 @@
 			transform: translate(-50%, -50%);transition:0.3s;
 			z-index: 1;
 		}
-		.hoverWrap .bar1, .hoverWrap .bar2{
+		.wrap .bar1, .wrap .bar2{
 			width: 25px;height: 3px;
 			background-color: #fff;
 			border-radius: 2px;
 			position: absolute;
 			left: 50%;top: 50%;transform: translate(-50%, -50%);
 		}
-		.hoverWrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
+		.wrap .bar2{transform: translate(-50%, -50%) rotate(90deg);}
 
 		.photo{width: 300px;height: 300px;position: relative;overflow: hidden;}
 		.photo img{
@@ -32,14 +32,14 @@
 			position: relative;opacity: 0.4;transition: 0.3s;
 		}
 		.photo:hover img{transform: translate(-50%, -50%) scale(1.4);}
-		.photo:hover .hoverWrap{transform: translate(-50%, -50%) rotate(180deg)}
+		.photo:hover .wrap{transform: translate(-50%, -50%) rotate(180deg)}
 		.photo:hover .bg{opacity: 0.4;background: #000;}
 	</style>
 </head>
 <body>
 	<div class="photo">
 		<img src="images/tour01.jpg" alt="" class=img>
-		<div class="hoverWrap">
+		<div class="wrap">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 		</div>
