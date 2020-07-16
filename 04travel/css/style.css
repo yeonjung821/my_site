@@ -147,21 +147,13 @@ html,body{width: 100%;height: 100%;}*/
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-#contentsWrap .imgWrap{
-	position: absolute;width: 400px;height: 50px;
-	left: 50%;top: 50%;
-	transform: translate(-50% -50%);
-	z-index: 1;
-}
-#contentsWrap .img01{
-	position: absolute;
-	right: -200px;top: -450px;
-	animation-name: bal01;
-	animation-duration: 2s;
+#contentsWrap .balloon{
+	position: absolute;right:450px;top: 200px;
+	animation-name:bal01;
+	animation-duration:1.5s;
+	animation-direction:alternate;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: ease-in-out;
-	z-index: 0; 
+	z-index: 0;
 }
 @keyframes bal01{
 	0%{transform: translateY(-20px);}
@@ -213,12 +205,13 @@ html,body{width: 100%;height: 100%;}*/
 			text-indent: 10px;border-radius: 10px;
 		}
 		.formLayer .left,
-		.formLayer .right{float: left;width: 130px;}
+		.formLayer .right,
+		.formLayer .mid{float: left;width: 130px;}
 
 		.formLayer .left{margin-right: 10px;}
+		.formLayer .mid{margin-right: 10px;}
 
-		.formLayer .grade{width: 115px;}
-		.formLayer .person{margin-right: 10px;width: 60px;}
+		.formLayer .num{width: 60px;margin-bottom: 20px;}
 
 
 		.formLayer .left input,
@@ -390,13 +383,14 @@ li.box8:hover{background: #68ae92;}*/
 
 
 #footerWrap{width: 100%;height: 110px;}
-#footerWrap .footer{width: 980px;margin: auto;margin-top:30px;}
-#footerWrap .footer a{margin-bottom: 10px;}
-#footerWrap .footer p{margin-bottom: 5px;}
-/*#footerWrap .footer p:nth-child(2){margin-top: 5px;}*/
+#footerWrap .footer{
+		width: 980px; margin: 0 auto;
+		padding:30px 0; 
+}
+#footerWrap li{float: left;margin-bottom: 10px;padding-right:20px;}
+#footerWrap li a{font-size:13px;color:#3e3e3e;font-weight: bold;}
 
-
-
+#footerWrap p{font-size:12px;font-style:normal;color:#737373;}
 
 
 

@@ -55,8 +55,8 @@
 
 
 <div id="contentsWrap"> <!-- bgimg-구름/풍선 -->
-	<div class="imgWrap">
-		<img src="images/balloon02.png" alt="" class="img01">
+	<div class="balloon">
+		<img src="images/balloon02.png" alt="">
 		<!-- <img src="images/reallyAir.png" alt="" class="img00"> -->
 	</div>
 	<div class="contents"> <!-- 큰틀 -->
@@ -92,19 +92,21 @@
 										<input type="date" id="edate">
 									</div>
 								</li>
-								<li class="gradePerson">
-									<div class="left grade">
-										<label for="cgrade">좌석등급</label>
-										<select name="cgrade" id="cgrade">
+								<li >
+									<div class="left">
+										<label for="grade">좌석등급</label>
+										<select name="grade" id="grade">
 											<option value="비즈니스">비즈니스</option>
 											<option value="이코노미">이코노미</option>
 										</select>
 									</div>
-									<div class="right person">
-										<label for="num">성인</label>
-										<input type="num" id="num1">
-										<label for="num">아이</label>
-										<input type="num" id="num2">
+									<div class="mid num">
+										<label for="adult">성인</label>
+										<input type="number" id="adult">
+									</div>
+									<div class="right num">
+										<label for="child">아동</label>
+										<input type="number" id="child">
 									</div>
 								</li>
 							</ul>
@@ -229,7 +231,13 @@
 
 <footer id="footerWrap">
 	<div class="footer"> <!-- 115 60 (25*2)50 -->
-		<a href="#">이용약관   개인정보취급방침   사이트맵   고객센터   광고 및 제휴문의</a>
+		<ul class="clearfix">
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">개인정보취급방침</a></li>
+			<li><a href="#">사이트맵</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">광고 및 제휴문의</a></li>
+		</ul>
 		<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 홍길동 대표번호 : 02-1234-5678</p>
 		<p>COPYRIGHTⓒ2014 HIMEDIA TOOUR. ALL RIGHTS RESERVED.</p>
 	</div>
