@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>chavy</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		header#header{
+			width: 1100px;height: 50px;
+			margin: 0 auto;
+			background:skyblue;
+		}
+		/*margin-top잘못 주면 아래도 망치니까 안주는게 나음*/
+		.box{
+			width: 100px;height: 10px;background: red;
+		}
+		.box1{
+			width: 100px;height: 10px;background: blue;
+			margin-top: 10px;
+		}
+
+		.visual{}
+		.visual .view{
+			width: 1100px;margin: 0 auto;
+			position: relative;height: 700px; 
+		}
+		.visual .slider li{overflow: hidden;}
+		.visual .slider img.img{position: absolute;left: 50%;}
+		.visual .visualTxt{position: absolute;top: 150px;width: 500px;}
+		.visual .visualTxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		.visual .visualTxt p{margin-bottom: 20px;}
+		.visual .visualTxt a{display: block;width: 200px;height: 80px;background: #f00; color: white;border-radius: 40px;text-align: center;line-height: 80px;}
+		/*앞에가 테그명 뒤에가 이미지파일*/
+
+		/*float:; 사용하게되면 부모한테 clearfix.*/
+		/*여러가지 방법의 레이아웃 잡는 법
+		1.부모자들(큰 박스)에 float: left; + float: right;
+		자식들 안에서 float: left; float: right;*/
+		/*2.로고는 그냥 만들고 오른쪽 박스를 position: absolute; 하고 오른쪽으로*/
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
+
+</head>
+<body>
+	<header id="header">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li> <!-- w100% -->
+				<div class="view">
+					<img src="images/bg01.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li> <!-- w100% -->
+				<div class="view">
+					<img src="images/bg01.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li> <!-- w100% -->
+				<div class="view">
+					<img src="images/bg01.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>

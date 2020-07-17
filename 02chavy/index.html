@@ -6,89 +6,378 @@
 	<title>chavy</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+
 	<style>
-		header#header{
-			width: 1100px;height: 50px;
-			margin: 0 auto;
-			background:skyblue;
+		/*1. h1에 {float: left;}주고 .header에 {float: right;}주거나
+		  2. h1에 {position: absolute; top: 0;right: 0;}주고
+		#headerWrap에 {position: relative;}주는 방법.*/
+		.shadow{box-shadow: 0 0 15px #ddd;}
+
+		/*header*/
+		header#headerWrap{
+			width: 1280px; 
+			margin: 0 auto; position: relative;
+			_background: #888;
 		}
-		/*margin-top잘못 주면 아래도 망치니까 안주는게 나음*/
-		.box{
-			width: 100px;height: 10px;background: red;
+		h1{
+			font-size:50px; 
+			line-height: 130px;width: 230px; 
+			_background: rgba(0,50,0,0.2)
 		}
-		.box1{
-			width: 100px;height: 10px;background: blue;
-			margin-top: 10px;
+		.header{
+			width: 1050px; line-height: 130px; 
+			position: absolute; top: 0;right: 0;
+			_background: rgba(0,80,0,0.2); 
+		}
+		.header .menu{
+			width: 580px;text-align: center;
+			float: left; margin: 0 55px 0 75px;
+			_background-color: rgba(200,0,0,0.2);
+		}
+		.header .menu li{width: 25%;float: left;}
+		.header .menu li:first-child{
+			font-weight:bold; text-decoration:underline;}
+
+
+		.header .login{width: 340px;text-align: center; 
+			float: right;
+			_background: rgba(0,0,50,0.3);
+		}
+		.header .login li{width: 50%;float: left;}
+		.header .login a{
+			float: right;
+			width: 130px; height: 50px; display: block;
+			background: #2c2c96; border-radius: 25px; color:white;
+			text-align: center;line-height: 50px;margin-top: 40px;
 		}
 
-		.visual{}
-		.visual .view{
-			width: 1100px;margin: 0 auto;
-			position: relative;height: 700px; 
+
+
+
+
+
+		/*visual slide*/
+		#visual{_background: rgba(0,30,0,0.2);}
+		#visual .view{
+			width: 1280px;height: 770px;
+			margin: 0 auto; position: relative
 		}
-		.visual .slider li{overflow: hidden;}
-		.visual .slider img.img{position: absolute;left: 50%;}
-		.visual .visualTxt{position: absolute;top: 150px;width: 500px;}
-		.visual .visualTxt h3{font-size: 2.5em;margin-bottom: 20px;}
-		.visual .visualTxt p{margin-bottom: 20px;}
-		.visual .visualTxt a{display: block;width: 200px;height: 80px;background: #f00; color: white;border-radius: 40px;text-align: center;line-height: 80px;}
-		/*앞에가 테그명 뒤에가 이미지파일*/
 
-		/*float:; 사용하게되면 부모한테 clearfix.*/
-		/*여러가지 방법의 레이아웃 잡는 법
-		1.부모자들(큰 박스)에 float: left; + float: right;
-		자식들 안에서 float: left; float: right;*/
-		/*2.로고는 그냥 만들고 오른쪽 박스를 position: absolute; 하고 오른쪽으로*/
+		#visual .slider li {overflow: hidden;}
+		#visual .slider img.img{left: 50%;position: absolute;}
+		#visual .visualTxt{width: 500px; top: 150px;position: absolute;}
+		#visual .visualTxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		#visual .visualTxt p{margin-bottom: 20px;color:#6e6e6e;}
+		#visual .visualTxt a{
+			width: 190px; height: 60px; display: block;
+			background: #2c2c96; border-radius: 30px; color:white;
+			text-align: center;line-height: 60px;
+		}
 
+		.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: 0 none;
+	    background: #fff;
+		}
+
+
+
+
+		
+	
+		/*text*/
+		#text{background: #f8f9ff;width: 100%;padding: 60px 0;}
+		#text .text {}
+
+		#text .text h4{
+			font-size: 2.0em; margin: 0 auto;
+			width: 900px;margin-bottom: 20px;
+			text-align: center;
+		}
+
+		#text .text p{
+			margin: auto;text-align: center;
+			width: 650px;
+			color:#6e6e6e;
+		}
+		.fontColorOne{color:#2c2c96;}
+
+
+		/*contents*/
+		#contents{width: 100%;height: 930px;padding: 200px 0;}
+		#contents .contents{
+			height: 100%;width: 1230px;
+			_background: orange; margin: auto ;
+		}
+		#contents .text{
+			float: left;
+			margin-top: 80px;
+			_background: pink;
+			width: 550px;height: 340px;
+		}
+		#contents .text h5{
+			font-size: 1.7em;
+			height: 140px;
+			padding: 10px 0;
+		}
+		#contents .text p{
+			height: 90px;margin-top: 35px;color:#6e6e6e;
+		}
+		#contents .text a{
+			width: 190px; height: 60px; display: block;
+			background: #2c2c96; border-radius: 30px; color:white;
+			text-align: center;line-height: 60px; margin-top: 40px;
+		}
+		
+
+
+		#contents .iconBox{
+			width: 450px;height: 510px;
+			float: right;_background: blue; margin-right: 50px; 
+		}
+		#contents .iconBox li{
+			float: left; width: 210px;height: 240px;
+			_background: #eee;text-align: center;
+			margin-bottom: 40px;transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#contents .iconBox li:hover{box-shadow: 0 0 15px #ddd; }
+		#contents .iconBox li:nth-child(2){background: #f8f9ff;}
+		#contents .iconBox li:nth-child(1),
+		#contents .iconBox li:nth-child(3){margin-right: 30px;}
+		#contents .iconBox li:nth-child(1),
+		#contents .iconBox li:nth-child(2){margin-top: 30px;}
+		#contents .iconBox li img{margin-top: 30px;}
+		#contents .iconBox p{font-size: 1.2em}
+
+
+
+
+		#conTentsTwo {background: #f8f9ff; width: 100%;height: 800px;}
+		#conTentsTwo .conTwo{padding: 255px 0;position: relative;width: 1230px;margin: 0 auto;}
+		#conTentsTwo .conTwo .txt{width: 350px;float: left;}
+		#conTentsTwo .txt h2{font-size: 1.7em;margin-bottom:15px;}
+		#conTentsTwo .txt p{margin-bottom: 30px;margin-top: 40px;color:#6e6e6e;}
+		#conTentsTwo .txt a{
+			width: 190px; display: block;
+			background: #2c2c96; border-radius: 30px; color:white;
+			text-align: center;line-height: 60px;margin-top: 40px;
+		}
+		#conTentsTwo .txt img.img{position: absolute;float: right;;top: 120px;}
+
+
+
+
+		/*/*text2*/ 
+		#textTwo{width: 100%;height: 450px;}
+		#textTwo .text {margin-top: 170px;}
+
+		#textTwo .text h4{
+			font-size: 2.0em; margin: 0 auto;
+			width: 900px;margin-bottom: 60px;
+			text-align: center;
+		}
+		#textTwo .text .aTag{margin:70px auto;width: 380px;}
+		#textTwo .text .left{
+			width: 190px; display: block;
+			background: #2c2c96; border-radius: 30px; color:white;
+			text-align: center;line-height: 60px;margin-top: 40px;float: left;
+		}
+		#textTwo .text .right{
+			width: 190px; display: block;
+			background: #f8f9ff; border-radius: 30px; color:#333333;
+			text-align: center;line-height: 60px;margin-top: 40px;float: right;
+		}
+
+
+
+		#conTentsThree{width: 100%; height: 1110px;}
+		#conTentsThree .conthree{width: 580px;height: 140px;margin: auto;}
+		#conTentsThree .conthree h3{
+			text-align: center;font-size: 2.0em
+		}
+		#conTentsThree .conthree p{
+			text-align: center;color:#6e6e6e; margin-top: 50px;
+		}
+		#conTentsThree .buTton{width: 1220px; height:630px;margin: auto;}
+		#conTentsThree .buTton .wrap{
+			width: 1220px;height: 130px;margin: auto;margin-bottom: 40px;
+			border: 1px solid #000;border-radius: 60px;
+		}
+		#contentsThree .buTton ul{width: 1010px;}
+		#conTentsThree .buTton li{font-size: 1.2em;float: left;margin: 50px 0;}
+		#conTentsThree .buTton a{float: right;margin: 50px 0;}
+
+
+
+/*710 580 =130,65 90
 	</style>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({pager:false});
 		});
 	</script>
-
 </head>
+
 <body>
-	<header id="header">
-		<div class="box"></div>
-		<div class="box1"></div>
+	<header id="headerWrap">
+		<h1>chavy</h1>
+		<div class="header clearfix">
+			<ul class="menu">
+				<li>Home</li>
+				<li>How It Works</li>
+				<li>Company</li>
+				<li>Career</li>
+			</ul>
+			<ul class="login">
+				<li>Sign in</li>
+				<a href="#">Register</a>
+			</ul>
+		</div>
 	</header>
-	<div class="visual">
+	<div id ="visual">
 		<ul class="slider">
-			<li> <!-- w100% -->
+			<li>
 				<div class="view">
 					<img src="images/bg01.jpg" alt="" class="img">
 					<div class="visualTxt">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
-						<a href="#" class="btnA">Request Demo</a>
+						<h3>Financial plans for <br>every<span class="fontColorOne"> person and <br>everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause<br>
+						that is the only way are gonna get it!</p>
+						<a href="#">Request Demo</a>
 					</div>
 				</div>
 			</li>
-			<li> <!-- w100% -->
+			<li>
 				<div class="view">
 					<img src="images/bg01.jpg" alt="" class="img">
 					<div class="visualTxt">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
-						<a href="#" class="btnA">Request Demo</a>
+						<h3>Financial plans for every <span class="fontColorOne"> person and everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause
+						that is the only way are gonna get it!</p>
+						<a href="#">Request Demo</a>
 					</div>
 				</div>
 			</li>
-			<li> <!-- w100% -->
+			<li>
 				<div class="view">
 					<img src="images/bg01.jpg" alt="" class="img">
 					<div class="visualTxt">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, culpa.</p>
-						<a href="#" class="btnA">Request Demo</a>
+						<h3>Financial plans for every<span class="fontColorOne"> person and everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause
+						that is the only way are gonna get it!</p>
+						<a href="#">Request Demo</a>
 					</div>
 				</div>
 			</li>
 		</ul>
-		
 	</div>
+	<div id="text"> <!-- 100% -->
+		<div class=text> <!-- 1200 -->
+			<h4>Save money&<span class="fontColorOne"> money will save you.</span></h4>
+			<p>I will tell you how to become a rich. close the doors. Be fearful<br>
+			when others are greedy.</p>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="contents clearfix">
+			<div class="text">
+					<h5>The proper guide that helps<br>
+						you to <span class="fontColorOne">unlock the real<br>
+						potential.</span></h5>
+					<p>I will tell you how to become a rich. Close the doors.<br>
+						Be fearful when others are greedy. I will tell you how <br>
+						to become a rich.</p>
+					<a href="#">Request Demo</a>
+			</div>
+			<div class="iconBox">
+				<ul>
+					<li>
+						<img src="images/icon01_01.jpg" alt="">
+						<p>Registration<br>Guide</p>
+					</li>
+					<li>
+						<img src="images/icon01_02.jpg" alt="">
+						<p>Live Call<br>Support</p>
+					</li>
+					<li>
+						<img src="images/icon01_03.jpg" alt="">
+						<p>Secured<br>Payment</p>
+					</li>
+					<li>
+						<img src="images/icon01_04.jpg" alt="">
+						<p>Track Your<br>Move</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="conTentsTwo">
+		<div class="conTwo">
+			<div class="txt">
+				<h2>A goal <span class="fontColorOne">without plan</span><br>just a wish for you.</h3>
+				<p>Go beyond thos paycheck with are solution to employees the guidanc they want.</p>
+				<a href="#" class="shadow">Explore Product</a>
+			</div>
+			<img src="images/img03_01.jpg" alt="" class="img">
+
+		</div> <!-- conThree -->
+		
+	</div> <!-- wrap -->
+	<div id="textTwo">
+		<div class="text">
+			<h4>With Solution, financial benifits have<span class="fontColorOne"> never been easier.</span></h4>
+			<div class="aTag">
+				<a href="#" class="shadow left">For Employers</a>
+				<a href="#" class="right">For Owners</a>
+			</div>
+		</div>
+	</div>
+	<div id="conTentsThree">
+		<div class="conthree">
+			<h3>Frequently Asked <span class="fontColorOne">Question.<span class="fontColorOne"></h3>
+			<p>Don't be satisfied with stories. how things have gone with<br>others. Unfold your own myth.</p>
+		</div>
+		<div class="buTton">
+			<div class="wrap">
+				<ul>
+					<li>1. Does it work?</li>
+					<a href="#"><img src="images/next.jpg" alt="next"></a>
+				</ul>
+			</div>
+			<div class="wrap">
+				<ul>
+					<li>2. What is the financial plan?</li>
+					<a href="#"><img src="images/next.jpg" alt="next"></a>
+				</ul>
+			</div>
+			<div class="wrap">
+				<ul>
+					<li>3. Can i know how it works?</li>
+					<a href="#"><img src="images/next.jpg" alt="next"></a>
+				</ul>
+			</div>
+			<div class="wrap">
+				<ul>
+					<li>4. How many employers can i expect?</li>
+					<a href="#"><img src="images/next.jpg" alt="next"></a>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
+
+
+<!-- position
+clear:both;
+display:block;
+no-repeat -->
