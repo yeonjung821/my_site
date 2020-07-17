@@ -13,7 +13,10 @@
 <body>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".oneSlider, .TwoSlider").bxSlider({
+				controls:false,
+				
+			});
 		});
 	</script>
 
@@ -140,19 +143,55 @@
 		</div>		<!-- contents1 -->
 		<div class="contents2 clearfix">
 				<ul class="boxWrap">
-					<li class="box1">
-						<!-- <img src="images/tour03.jpg" alt=""> -->
-						<a href="">
-							<h4>HILLTON HOTEL (PARIS)</h4>
-							<img src="images/star.png" alt="">
-						</a>
+					<li>
+						<ul class="oneSlider">
+							<li class="box1">
+								<!-- <img src="images/tour03.jpg" alt=""> -->
+								<a href="">
+									<h4>HILLTON HOTEL (PARIS)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+							<li class="box1">
+								<!-- <img src="images/tour03.jpg" alt=""> -->
+								<a href="">
+									<h4>HILLTON HOTEL (PARIS)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+							<li class="box1">
+								<!-- <img src="images/tour03.jpg" alt=""> -->
+								<a href="">
+									<h4>HILLTON HOTEL (PARIS)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+						</ul>
 					</li>
-					<li class="box2">
-						<!-- <img src="images/tour04.jpg" alt=""> -->
-						<a href="">
-							<h4>광관명소(디즈니랜드)</h4>
-							<img src="images/star.png" alt="">
-						</a>
+					<li>
+						<ul class="TwoSlider">
+							<li class="box2">
+								<!-- <img src="images/tour04.jpg" alt=""> -->
+								<a href="">
+									<h4>광관명소(디즈니랜드)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+							<li class="box2">
+								<!-- <img src="images/tour04.jpg" alt=""> -->
+								<a href="">
+									<h4>광관명소(디즈니랜드)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+							<li class="box2">
+								<!-- <img src="images/tour04.jpg" alt=""> -->
+								<a href="">
+									<h4>광관명소(디즈니랜드)</h4>
+									<img src="images/star.png" alt="">
+								</a>
+							</li>
+						</ul>
 					</li>
 					<li class="box3">
 						<!-- <img src="images/tour05.jpg" alt=""> -->
