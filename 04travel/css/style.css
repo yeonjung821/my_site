@@ -319,7 +319,11 @@ ul.oneSlider>li, ul.twoSlider>li{width: 233.75px;height: 240px;}
 li.box1{background-image: url(../images/tour03.jpg);}
 li.box2{background-image: url(../images/tour04.jpg);}
 li.box3{background-image: url(../images/tour05.jpg);}
+li.box3>p{color:white;font-weight:bold;text-align: center;margin-top: 10px;font-size:80em;}
 li.box4{background-image: url(../images/tour06.jpg);}
+li.box4 .inTxt{padding: 14px;font-size:11px;}
+li.box4 .inTxt h3{margin-bottom: 15px;color:#484848;}
+li.box4 .inTxt>p{color:#44619d;}
 /*li.box5{background-image: url(../images/tour07.jpg);}
 li.box6{background-image: url(../images/tour08.jpg);}
 li.box7{background-image: url(../images/tour09.jpg);}
