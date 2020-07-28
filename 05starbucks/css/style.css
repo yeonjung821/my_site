@@ -6,19 +6,9 @@
 nav.utillMenu{width: 100%;height: 100px;background: #f6f5ef;}
 nav.utillMenu .menu{width: 1240px;line-height: 100px;margin: 0 auto;}
 nav.utillMenu .menu h1{background-image: url(../images/logo.png);
-	width: 100px;height: 100px;float: left;margin: 0 30px auto;text-indent: -9999px;}
+	width: 100px;height: 100px;float: left;margin: 0 30px auto;text-indent: -9999px;
+}
 nav.utillMenu .menu .mainGnb{float: right;}
 nav.utillMenu .menu .mainGnb>ul{}
 nav.utillMenu .menu .mainGnb>ul>li{width: 220px;line-height: 100px;float: left;text-align: center;}
 nav.utillMenu .menu .mainGnb>ul>li:hover{background: #ebe9de;}
-/*.header{}
-.header .utillMenu{width: 100%;height: 150px;background: #f6f5ef;}
-.header .utillMenu .menu{width: 1260px;margin: 0 auto;line-height: 150px;}
-.header .utillMenu .menu>h1{background-image: url(../images/logo.png);float: left;
-	width:249px;height: 150px;text-indent:-9999px;margin: 0 70px auto;
-}
-.header .utillMenu .menu .mainGnb{width: 100%;margin: 0 auto;}
-.header .utillMenu .menu .mainGnb>ul{}
-.header .utillMenu .menu .mainGnb>ul>li{float: left;width: 210px;height: 150px;text-align: center;}
-
-.header .utillMenu .menu .mainGnb li:hover{background: #ebe9de;}*/
