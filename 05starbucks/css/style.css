@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-#headerWrap{width: 1915px;height: 1000px;}
+#headerWrap{width: 1600px;height: 1100px;}
 .header{}
 .header .utillMenu{width: 100%;height: 150px;background: #f6f5ef;}
 .header .utillMenu .menu{width: 1260px;margin: 0 auto;line-height: 150px;}
